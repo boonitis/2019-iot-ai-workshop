@@ -29,11 +29,11 @@ ABSOLUTELY, DO NOT POWER UP YOUR PI DURING THIS SECTION.
 
 1. Connect Pi Camera to serial interface.
 
-    ![Connect a Pi Camera](/figures/connect-camera.jpg)
+    ![Connect a Pi Camera](https://projects-static.raspberrypi.org/projects/physical-computing-with-scratch/702273e5f1211f7041b6d1dc3939944cf0b99409/en/images/pir_wiring.png)
 
 2. Using jumper cables, connect a PIR sensor to GPIO pins. Make sure that you follow the diagram accordingly. 
 
-    ![Wiring a PIR sensor](/figures/pir_wiring.png)
+    ![Wiring a PIR sensor](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/e76b8fa9dd33f22cb9fb38908f3c01348e245447/en/images/connect-camera.jpg)
 
     There are three pins on the PIR; they should be labeled Vcc, GND, and Out. If these labels aren’t clear, they are sometimes concealed beneath the Fresnel lens (the white cap), which you can temporarily remove to see the pin labels.
 
