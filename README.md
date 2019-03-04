@@ -133,4 +133,4 @@ Using pre-trained MobileNet and Transfer Learning, we can train a new custom mod
 
         python3 test/recognition
 
-    Experiment with different parameters to archive the best possible model!
+    Experiment with different parameters to achieve the best possible model!
