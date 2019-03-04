@@ -121,7 +121,7 @@ Using pre-trained MobileNet and Transfer Learning, we can train a new custom mod
 
 6. Using any IDE, open train.py and modify its *PARAMETERS* to train different type of model. Rembember that you can test the model with this command.
 
-    python3 test/recognition
+        python3 test/recognition
 
     Experiment with different parameters to archive the best possible model!
 
