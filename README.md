@@ -72,7 +72,7 @@ We have to install Raspbian 9 (Stretch) and set up a working environment.
 
 ## Setup your IoT Image Recognition System
 
-1. Download [the project repository from GitHub](https://github.com/boonitis/2019-iot-ai-workshop), or clone it using the command. 
+1. Download the project repository from GitHub **https://github.com/boonitis/2019-iot-ai-workshop**, or clone it using the command. 
 
         git clone https://github.com/boonitis/2019-iot-ai-workshop.git
 
@@ -104,7 +104,7 @@ We have to install Raspbian 9 (Stretch) and set up a working environment.
 
 ## Train your own custom model
 
-To train a custom model, first of all, you need training data. Go to this link and click on **DOWNLOAD TRAINING DATA**. (NOTED: During the workshop session, the training data are already provided at */home/pi/2019-iot-ai-workshop/dataset*)
+To train a custom model, first of all, you need training data. Go to **https://github.com/boonitis/2019-iot-ai-workshop** and click on **DOWNLOAD TRAINING DATA**. (NOTED: During the workshop session, the training data are already provided at */home/pi/2019-iot-ai-workshop/dataset*)
 
 Using pre-trained MobileNet and Transfer Learning, we can train a new custom model very quickly.
 
