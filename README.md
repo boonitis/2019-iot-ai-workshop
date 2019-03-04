@@ -1,8 +1,10 @@
 # Instruction for 2019 IOT and AI for Engineers workshop
 
-In this workshop, we use Raspberry Pi with a motion sensor and a camera to create IoT image recognition system. 
+In this workshop, we use Raspberry Pi with PIR Sensor, Pi Camera, and TensorFlow model to create IoT image recognition system. 
 
 We use Python to control GPIO that connects a motion sensor (PIR Sensor) and a camera module (Pi Camera). 
+
+Instead of training our neural network from scratch, we will using pre-trained model and Transfer Learning technique to train a custom model quickly.
 
 Image recognition is handled by TensorFlow.
 
@@ -23,11 +25,11 @@ The TensorFlow announced official support for Raspberry Pi, from Version 1.9 it 
 
 ## Assembling your Pi
 
-DO NOT POWER UP YOUR PI DURING THIS SECTION.
+ABSOLUTELY, DO NOT POWER UP YOUR PI DURING THIS SECTION.
 
-1. 
+1. Connect Pi Camera
 
-## Installing Raspbian 9 and essential packages
+## Install Raspbian 9 and essential packages
 
 We have to install Raspbian 9 (Stretch) and setup working environment. 
 
@@ -56,7 +58,7 @@ We have to install Raspbian 9 (Stretch) and setup working environment.
 
         pip3 install tensorflow
 
-## IoT Image Recognition System
+## Setup your IoT Image Recognition System
 
 1. Download [the project repository from GitHub](https://github.com/boonitis/2019-iot-ai-workshop), or clone it using the command. 
 
@@ -88,9 +90,9 @@ We have to install Raspbian 9 (Stretch) and setup working environment.
     
     Check the results.
 
-## Training your own model
+## Train your own custom model
 
-To train a custom model, first of all, you need training data. Go to this link and click on **DOWNLOAD TRAINING DATA**. (NOTED: During the workshop, the training data are already provided at */home/pi/2019-iot-ai-workshop/dataset*)
+To train a custom model, first of all, you need training data. Go to this link and click on **DOWNLOAD TRAINING DATA**. (NOTED: During the workshop session, the training data are already provided at */home/pi/2019-iot-ai-workshop/dataset*)
 
 Using pre-trained MobileNet and Transfer Learning, we can train a new custom model very quickly.
 
@@ -103,15 +105,25 @@ Using pre-trained MobileNet and Transfer Learning, we can train a new custom mod
 
         ls dataset/
 
-3. To train a custom model, you can use provided script.
+3. To create your custom model, move any directory you want to use as a target class in the custom model to *training/*. For example, this command move all *dog* images to training directory.
 
-        python3 train.py
+        mv dataset/dog training/
+    
+    
 
-    This command will use training data in *dataset/* to train a model.
+4. To train a custom model, you can use provided script.
 
-4. The training output will be available at *models/*
+        python3 train.py training/
 
-5. Using any IDE, open train.py and modify its *PARAMETERS* to train different type of model. Rembember that you can test the model with this command.
+    This command will use training data in *training/* to train a model.
+
+5. The training output will be available at *models/*
+
+6. Using any IDE, open train.py and modify its *PARAMETERS* to train different type of model. Rembember that you can test the model with this command.
 
     python3 test/recognition
+
+    Experiment with different parameters to archive the best possible model!
+
+
 
