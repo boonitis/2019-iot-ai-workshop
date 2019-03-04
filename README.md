@@ -37,9 +37,9 @@ ABSOLUTELY, DO NOT POWER UP YOUR PI DURING THIS SECTION.
 
     There are three pins on the PIR; they should be labeled Vcc, GND, and Out. If these labels aren’t clear, they are sometimes concealed beneath the Fresnel lens (the white cap), which you can temporarily remove to see the pin labels.
 
-    1. The Vcc pin needs attaching to a **5V** pin on the Raspberry Pi.
-    2. The GND pin on the PIR sensor can be attached to any ground pin on the Raspberry Pi.
-    3. Lastly, the Out pin needs to be connected to **GPIO4**.
+    1. The **Vcc** pin needs attaching to a **5V** pin on the Raspberry Pi.
+    2. The **GND** pin on the PIR sensor can be attached to any ground pin on the Raspberry Pi.
+    3. Lastly, the **Out** pin needs to be connected to **GPIO4**.
 
 ## Install Raspbian 9 and essential packages
 
