@@ -39,7 +39,7 @@ ABSOLUTELY, DO NOT POWER UP YOUR PI DURING THIS SECTION.
 
     1. The **Vcc** pin needs attaching to a **5V** pin on the Raspberry Pi.
     2. The **GND** pin on the PIR sensor can be attached to any ground pin on the Raspberry Pi.
-    3. Lastly, the **Out** pin needs to be connected to **GPIO4**.
+    3. Lastly, the **Out** pin needs to be connected to **GPIO4 (GP4)**.
     
     ![GPIO](https://www.eletimes.com/wp-content/uploads/2017/03/Fig-9.jpg)
 
