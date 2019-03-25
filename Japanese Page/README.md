@@ -43,8 +43,6 @@ TensorFlowはバージョン1.9からラスベリパイのために多く利用�
 
 ## Install and update essential packages
 
-We have to install Raspbian 9 (Stretch) and set up a working environment. 
-
 1. Power on your Raspberry Pi, make sure it's connected to the internet.
    
 2. 以下のコマンドを利用し、Pi OSやパケッジーをアップデートしてください。
