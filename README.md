@@ -29,44 +29,42 @@ ABSOLUTELY, DO NOT POWER UP YOUR PI DURING THIS SECTION.
 
 1. Connect Pi Camera to serial interface.
 
-    ![Connect a Pi Camera](https://projects-static.raspberrypi.org/projects/physical-computing-with-scratch/702273e5f1211f7041b6d1dc3939944cf0b99409/en/images/pir_wiring.png)
+    ![Connect a Pi Camera](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/e76b8fa9dd33f22cb9fb38908f3c01348e245447/en/images/connect-camera.jpg)
 
 2. Using jumper cables, connect a PIR sensor to GPIO pins. Make sure that you follow the diagram accordingly. 
 
-    ![Wiring a PIR sensor](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/e76b8fa9dd33f22cb9fb38908f3c01348e245447/en/images/connect-camera.jpg)
+    ![Wiring a PIR sensor](https://projects-static.raspberrypi.org/projects/physical-computing-with-scratch/702273e5f1211f7041b6d1dc3939944cf0b99409/en/images/pir_wiring.png)
 
     There are three pins on the PIR; they should be labeled Vcc, GND, and Out. If these labels aren’t clear, they are sometimes concealed beneath the Fresnel lens (the white cap), which you can temporarily remove to see the pin labels.
 
     1. The **Vcc** pin needs attaching to a **5V** pin on the Raspberry Pi.
     2. The **GND** pin on the PIR sensor can be attached to any ground pin on the Raspberry Pi.
     3. Lastly, the **Out** pin needs to be connected to **GPIO4**.
+    
+    ![GPIO](https://projects-static.raspberrypi.org/projects/physical-computing/59b9cbb555c53a50d510aa15b06e5d017f950b59/en/images/raspio-ports.jpg)
 
-## Install Raspbian 9 and essential packages
+## Install and update essential packages
 
 We have to install Raspbian 9 (Stretch) and set up a working environment. 
 
-1. Insert the prepared SD card to your Raspberry Pi and connect a power supply to turn it on.
-
-2. Install Raspbian 9 with [NOOBS Installer](https://www.raspberrypi.org/downloads/noobs/) downloaded from the official website. 
-
-3. When the installation finish, you'll arrive at the desktop. Open the terminal.
+1. Power on your Raspberry Pi, make sure it's connected to the internet.
    
-4. Update your Pi and its packages. Using the following commands.
+2. Update your Pi packages. Using the following commands.
 
         sudo apt update
         sudo apt upgrade
 
-5. Ensure that you have the latest Python version, using the following command. 
+3. Ensure that you have the latest Python version, using the following command. 
 
         python3 --version
 
     At least Python 3.4 is recommended.
 
-6. Install *libatlas* library. Which is required by Tensorflow.
+4. Install *libatlas* library. Which is required by Tensorflow.
 
         sudo apt install libatlas-base-dev
 
-7. Install TensorFlow using Pip3.
+5. Install TensorFlow using Pip3.
 
         pip3 install tensorflow
 
