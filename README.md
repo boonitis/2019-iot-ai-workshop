@@ -41,7 +41,7 @@ ABSOLUTELY, DO NOT POWER UP YOUR PI DURING THIS SECTION.
     2. The **GND** pin on the PIR sensor can be attached to any ground pin on the Raspberry Pi.
     3. Lastly, the **Out** pin needs to be connected to **GPIO4**.
     
-    ![GPIO](https://projects-static.raspberrypi.org/projects/physical-computing/59b9cbb555c53a50d510aa15b06e5d017f950b59/en/images/raspio-ports.jpg)
+    ![GPIO](https://www.eletimes.com/wp-content/uploads/2017/03/Fig-9.jpg)
 
 ## Install and update essential packages
 
