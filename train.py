@@ -40,7 +40,7 @@ install(packages_to_install)
 
 
 data_root = tf.keras.utils.get_file(
-    'flower_photos','https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz',
+    'flower_photos','/home/boon/Desktop/2019-iot-ai-workshop/flower_photos/',
     untar=True)
 
 image_generator = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1/255)
