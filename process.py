@@ -4,6 +4,7 @@ import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
 import PIL.Image as Image
+import os
 from tensorflow.keras import layers
 
 ##################################################################################
