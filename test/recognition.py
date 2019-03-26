@@ -202,11 +202,6 @@ if __name__ == '__main__':
   # imagenet_2012_challenge_label_map_proto.pbtxt:
   #   Text representation of a protocol buffer mapping a label to synset ID.
   parser.add_argument(
-      type=str,
-      default='test.jpg',
-      help='Absolute path to image file.'
-  )
-  parser.add_argument(
       '--model_dir',
       type=str,
       default='/tmp/imagenet',
@@ -215,6 +210,12 @@ if __name__ == '__main__':
       imagenet_synset_to_human_label_map.txt, and
       imagenet_2012_challenge_label_map_proto.pbtxt.\
       """
+  )
+  parser.add_argument(
+      'image_file',
+      type=str,
+      default='',
+      help='Absolute path to image file.'
   )
   parser.add_argument(
       '--num_top_predictions',
