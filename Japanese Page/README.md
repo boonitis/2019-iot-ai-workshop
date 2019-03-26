@@ -43,7 +43,7 @@ TensorFlowはバージョン1.9からラスベリパイのために多く利用�
 
 ## Install and update essential packages
 
-1. Power on your Raspberry Pi, make sure it's connected to the internet.
+1. ラスベリーパイに電源を入れてください。また、ラスベリーパイをインターネットにつなげてください（WiFiを利用します）。
    
 2. 以下のコマンドを利用し、Pi OSやパケッジーをアップデートしてください。
 
