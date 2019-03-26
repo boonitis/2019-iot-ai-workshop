@@ -6,3 +6,6 @@ result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=su
 #returns result but must be read individualy via
 #result.stdout.read()#returns output
 #result.stderr.read()#returns error
+command = "scp boon@192.168.11.12:/home/boon/Desktop/2019-iot-ai-workshop/saved_models/* /home/pi/2019-iot-ai-workshop/saved_models/"
+os.system(command)
+result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
