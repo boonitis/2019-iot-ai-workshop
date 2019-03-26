@@ -82,7 +82,7 @@ TensorFlowはバージョン1.9からラスベリパイのために多く利用�
 
 5. 以下のプログラムを用いてテストします。
 
-        python3 test/recognition.py test.jpg
+        python3 test/recognition.py test/test.jpg
 
    別なイメージをテストすると結果が変わる可能性があります。
 
