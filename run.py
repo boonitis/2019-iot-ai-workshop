@@ -55,7 +55,8 @@ try:
             print("Image captured as: %s" % file_name+".jpg")
 
             # file_path = 'test-monkey.jpg'
-            command = "python3 ./test/recognition.py ../" + file_path 
+            command = "python3 ./test/recognition.py /" + os.path.join(os.path.dirname(
+                __file__), "captures", file_name+".jpg")
             os.system(command)
             result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
             
