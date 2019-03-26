@@ -49,7 +49,7 @@ try:
             # Capture image file using Pi camera (Timestamp as a file name)
             print("Capturing image...")
             file_name = "test"
-            file_path = os.path.join(os.getcwd(), "captures", file_name, ".jpg")  
+            file_path = os.path.join(os.getcwd(), "captures", file_name + ".jpg")  
             camera.capture(file_path)
             print("Image captured as: %s" % file_name+".jpg")
 
