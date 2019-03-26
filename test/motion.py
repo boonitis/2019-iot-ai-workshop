@@ -20,9 +20,6 @@ GPIO.setup(4, GPIO.IN, GPIO.PUD_DOWN)
 camera = PiCamera()
 camera.resolution = (1600, 1200)
 
-# Setup Performance Timers
-timer_all = Clock()
-
 # Initialize the counter
 counter = count(start=0,step=1)
 
