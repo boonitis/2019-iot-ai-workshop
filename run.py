@@ -48,7 +48,7 @@ try:
 
             # Capture image file using Pi camera (Timestamp as a file name)
             print("Capturing image...")
-            file_name = format(datetime.now())
+            file_name = "test"
             file_path = os.path.join(os.path.dirname(
                 __file__), "captures", file_name+".jpg")
             camera.capture(file_path)
@@ -62,15 +62,6 @@ try:
             
             time.sleep(8)
 
-            # Delete the image file from this device storage
-            if 'k' not in option:
-                print("Removing temponary image files...")
-                file_list = glob.glob(os.path.join(os.path.dirname(__file__),"captures","*.jpg"))
-                for f in file_list:
-                    print("%s removed" % f)
-                    os.remove(f)
-
-                print("Process successfully complete")
 
 
         print(next(counter))
