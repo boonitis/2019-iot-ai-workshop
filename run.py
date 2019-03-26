@@ -49,14 +49,12 @@ try:
             # Capture image file using Pi camera (Timestamp as a file name)
             print("Capturing image...")
             file_name = "test"
-            file_path = os.path.join(os.path.dirname(
-                __file__), "captures", file_name+".jpg")
+            file_path = os.path.join(os.getcwd(), "captures", file_name, ".jpg")  
             camera.capture(file_path)
             print("Image captured as: %s" % file_name+".jpg")
 
             # file_path = 'test-monkey.jpg'
-            command = "python3 ./test/recognition.py /" + os.path.join(os.path.dirname(
-                __file__), "captures", file_name+".jpg")
+            command = "python3 ./test/recognition.py " + file_path
             os.system(command)
             result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
             
