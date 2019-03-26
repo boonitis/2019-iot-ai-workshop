@@ -9,8 +9,6 @@ from datetime import datetime
 from itertools import count
 
 import RPi.GPIO as GPIO
-from modules import photograph
-from modules.clock import Clock
 from picamera import PiCamera
 
 # Setup GPIO

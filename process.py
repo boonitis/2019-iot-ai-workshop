@@ -38,7 +38,9 @@ install(packages_to_install)
 
 ###########################################################
 
-
+command = "ssh -t boon@192.168.11.12 'rm -rf /home/boon/Desktop/2019-iot-ai-workshop/training/*'"
+os.system(command)
+result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
 data_root = tf.keras.utils.get_file(
     'flower_photos','/home/boon/Desktop/2019-iot-ai-workshop/training/',
     untar=True)
