@@ -59,6 +59,7 @@ try:
             os.system(command)
             result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
             
+            time.sleep(8)
 
             # Delete the image file from this device storage
             if 'k' not in option:
