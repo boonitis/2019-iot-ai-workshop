@@ -59,19 +59,10 @@ try:
             print("Image captured as: %s" % file_name+".jpg")
 
             # file_path = 'test-monkey.jpg'
-
-            # Upload image file to cloud storage (Amazon Web Service)
-            print("Uploading image to cloud storage...")
-            res = photograph.store({
-                "image": file_path,
-                "location": "Tsuruoka",
-                "latitude": 13.7245601,
-                "longitude": 100.4930242,
-                "scarecrow_id": 1,
-            })
-            print("Uploaded image successfully")
-            print("Printing response from server...")
-            print(json.dumps(res.json(),indent=4,sort_keys=True))
+            command = "python3 ./test/recognition.py " + file_name+".jpg"
+            os.system(command)
+            result = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+            
 
             # Delete the image file from this device storage
             if 'k' not in option:
