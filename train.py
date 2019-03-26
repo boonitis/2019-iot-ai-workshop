@@ -1,6 +1,5 @@
 import os
 import subprocess
-
 # Train model on the server
 
 command = "ssh -t boon@192.168.11.12 'python3 /home/boon/Desktop/2019-iot-ai-workshop/process.py'"
